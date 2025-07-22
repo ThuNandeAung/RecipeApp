@@ -8,7 +8,7 @@ const session = require('express-session');
 const flash = require('connect-flash');
 const app = express();
 
-// Database connection//
+// Database connection, change it?????//
 const db = mysql.createConnection({
     host: 'localhost',
     user: 'root',
