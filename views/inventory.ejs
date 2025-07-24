@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +14,9 @@
     }
   </style>
 </head>
+
 <body>
+  <!--Navigation Bar-->
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #640F05;">
       <div class="container-fluid">
         <a class="navbar-brand" href="/">recipe app</a>
@@ -61,6 +64,7 @@
       </div>
     </nav>
  
+    <!--Recipe Images Carousel/Slideshow-->
     <div id="carouselExampleCaptions" class="carousel slide">
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -106,11 +110,11 @@
  
  
     <div class="container my-5" style="text-align: center;">
-      <h1><b>Popular Categories</b></h1>
+      <h1><b>Food Categories</b></h1>
    
       <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 28px; margin-top: 20px;">
    
-        <!-- Your circle items -->
+        <!-- Circle Image Displays -->
         <div style="text-align: center; width: 200px;">
           <img src="https://i.pinimg.com/736x/0c/1d/38/0c1d38bdfdf26612f22e6700b12a944c.jpg" class="rounded-circle"
             alt="circle1" style="width: 200px; height: 200px; object-fit: cover;">
@@ -218,7 +222,7 @@
             <!-- Edit Link -->
             <td><a href="/updateProduct/<%= products[i].productId %>">Edit</a></td>
             <!-- Delete Link -->
-            <td><a href="/deleteProduct/<%= products[i].productId %>" onclick="return confirm('Are you sure you want to delete this product?')">Delete</a></td>
+            <td><a href="/deleteProduct/<%= products[i].productId %>" onclick="return confirm('Are you sure you want to delete this recipe?')">Delete</a></td>
           </tr>
         <% } %>
       </tbody>
